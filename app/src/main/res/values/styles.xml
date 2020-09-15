@@ -1,0 +1,56 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+<!--         Customize your theme here. -->
+        <item name="colorPrimary">@color/blue2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue4</item>
+
+        <item name="colorError">@color/red</item>
+    </style>
+
+    <style name="DarkOutlineBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="colorPrimary">@color/blue4</item>
+        <item name="colorPrimaryVariant">#000000</item>
+        <item name="colorOnPrimary">@color/blue2</item>
+        <item name="colorSecondary">#2962FF</item>
+        <item name="colorSecondaryVariant">#0039CB</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorError">@color/red</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorOnBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="teststyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+
+    <style name="TextInputLayoutWhite" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <!-- reference our hint & error styles -->
+<!--        <item name="android:textColor">@color/white</item>-->
+        <item name="android:textColorHint">@color/white</item> //hint color normal
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/green</item>
+        <item name="colorControlHighlight">@color/black</item>
+        <item name="startIconTint">@color/white</item>
+        <item name="counterTextColor">@color/white</item>
+    </style>
+    <style name="WhiteTheme">
+        <item name="colorPrimary">@color/yellow</item>
+    </style>
+
+    <style name="TextInputLayoutColor" parent="Widget.Design.TextInputLayout">
+        <!-- reference our hint & error styles -->
+        <item name="android:textColor">@color/blue2</item>
+        <item name="android:textColorHint">@color/blue2</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="colorControlHighlight">@color/green</item>
+
+    </style>
+
+</resources>

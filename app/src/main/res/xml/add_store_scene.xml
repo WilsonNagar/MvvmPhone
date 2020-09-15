@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        android:id="@+id/add_store_transition12"
+        motion:constraintSetEnd="@+id/add_store_phase2"
+        motion:constraintSetStart="@+id/add_store_phase1"
+        motion:duration="500">
+    </Transition>
+    <Transition
+        android:id="@+id/add_store_transition23"
+        motion:constraintSetEnd="@+id/add_store_phase3"
+        motion:constraintSetStart="@+id/add_store_phase2"
+        motion:duration="500">
+    </Transition>
+    <Transition
+        android:id="@+id/add_store_transition34"
+        motion:constraintSetEnd="@+id/add_store_phase4"
+        motion:constraintSetStart="@+id/add_store_phase3"
+        motion:duration="500">
+    </Transition>
+    <ConstraintSet android:id="@+id/add_store_phase1">
+        <Constraint
+            android:id="@+id/add_store_set1"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toBottomOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.4"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set2"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.45"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set3"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.45"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set4"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.4"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/add_store_phase2">
+        <Constraint
+            android:id="@+id/add_store_set1"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:rotation="180"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:alpha="0"
+            motion:layout_constraintHorizontal_bias="0.9"
+            motion:layout_constraintTop_toBottomOf="parent"
+            motion:layout_constraintHeight_percent="0.4"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set2"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toBottomOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.45"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set3"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.45"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set4"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.4"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/add_store_phase3">
+        <Constraint
+            android:id="@+id/add_store_set1"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:rotation="180"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:alpha="0"
+            motion:layout_constraintHorizontal_bias="0.9"
+            motion:layout_constraintTop_toBottomOf="parent"
+            motion:layout_constraintHeight_percent="0.4"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set2"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:rotation="-180"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:alpha="0"
+            motion:layout_constraintHorizontal_bias="0.1"
+            motion:layout_constraintTop_toBottomOf="parent"
+            motion:layout_constraintHeight_percent="0.45"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set3"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toBottomOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.45"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set4"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.4"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/add_store_phase4">
+        <Constraint
+            android:id="@+id/add_store_set1"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:rotation="180"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:alpha="0"
+            motion:layout_constraintHorizontal_bias="0.9"
+            motion:layout_constraintTop_toBottomOf="parent"
+            motion:layout_constraintHeight_percent="0.4"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set2"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:rotation="-180"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:alpha="0"
+            motion:layout_constraintHorizontal_bias="0.1"
+            motion:layout_constraintTop_toBottomOf="parent"
+            motion:layout_constraintHeight_percent="0.45"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set3"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:rotation="180"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:alpha="0"
+            motion:layout_constraintHorizontal_bias="0.9"
+            motion:layout_constraintTop_toBottomOf="parent"
+            motion:layout_constraintHeight_percent="0.45"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/add_store_set4"
+            motion:layout_constraintWidth_percent="0.85"
+            android:elevation="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toBottomOf="@id/add_store_top_graphic"
+            motion:layout_constraintHeight_percent="0.4"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+</MotionScene>

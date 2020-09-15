@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        android:id="@+id/add_cab_transition12"
+        motion:constraintSetEnd="@+id/add_cab_set2"
+        motion:constraintSetStart="@+id/add_cab_set1"
+        motion:duration="500">
+    </Transition>
+    <Transition
+        android:id="@+id/add_cab_transition23"
+        motion:constraintSetEnd="@+id/add_cab_set3"
+        motion:constraintSetStart="@+id/add_cab_set2"
+        motion:duration="500">
+    </Transition>
+    <Transition
+        android:id="@+id/add_cab_transition34"
+        motion:constraintSetEnd="@+id/add_cab_set4"
+        motion:constraintSetStart="@+id/add_cab_set3"
+        motion:duration="500">
+    </Transition>
+    <ConstraintSet android:id="@+id/add_cab_set1">
+
+        <Constraint
+            android:id="@+id/add_cab_phase1"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintHorizontal_chainStyle="spread"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/add_cab_sub_background"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase2"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase2"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase1"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase3"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase3"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase2"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase4"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase4"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            motion:layout_constraintEnd_toEndOf="@+id/add_cab_sub_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase3"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_car"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.25"
+            motion:layout_constraintEnd_toEndOf="@+id/add_cab_phase1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.7"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_phase1"
+            motion:layout_constraintStart_toStartOf="@id/add_cab_phase1"
+            motion:layout_constraintDimensionRatio="W,2:5" />
+        <Constraint
+            android:id="@+id/add_cab_next"
+            motion:layout_constraintWidth_percent="0.3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.975"
+            motion:layout_constraintHeight_percent="0.075"
+            motion:layout_constraintHorizontal_bias="0.9" />
+
+        <!-- SCENES -->
+        <Constraint
+            android:id="@+id/add_cab_screen1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen2"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen3"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen4"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/add_cab_set2">
+
+        <Constraint
+            android:id="@+id/add_cab_phase1"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintHorizontal_chainStyle="spread"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/add_cab_sub_background"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase2"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase2"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase1"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase3"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase3"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase2"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase4"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase4"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            motion:layout_constraintEnd_toEndOf="@+id/add_cab_sub_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase3"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_car"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.25"
+            motion:layout_constraintEnd_toEndOf="@+id/add_cab_phase2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.7"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_phase2"
+            motion:layout_constraintStart_toStartOf="@id/add_cab_phase2"
+            motion:layout_constraintDimensionRatio="W,2:5" />
+        <Constraint
+            android:id="@+id/add_cab_next"
+            motion:layout_constraintWidth_percent="0.3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.975"
+            motion:layout_constraintHeight_percent="0.075"
+            motion:layout_constraintHorizontal_bias="0.9" />
+
+        <!-- SCENES -->
+        <Constraint
+            android:id="@+id/add_cab_screen1"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintWidth_percent="0.99" />
+        <Constraint
+            android:id="@+id/add_cab_screen2"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99" />
+        <Constraint
+            android:id="@+id/add_cab_screen3"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen4"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/add_cab_set3">
+
+        <Constraint
+            android:id="@+id/add_cab_phase1"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintHorizontal_chainStyle="spread"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/add_cab_sub_background"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase2"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase2"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase1"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase3"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase3"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase2"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase4"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase4"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            motion:layout_constraintEnd_toEndOf="@+id/add_cab_sub_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase3"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_car"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.25"
+            motion:layout_constraintEnd_toEndOf="@+id/add_cab_phase3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.7"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_phase3"
+            motion:layout_constraintStart_toStartOf="@id/add_cab_phase3"
+            motion:layout_constraintDimensionRatio="W,2:5" />
+        <Constraint
+            android:id="@+id/add_cab_next"
+            motion:layout_constraintWidth_percent="0.3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.975"
+            motion:layout_constraintHeight_percent="0.075"
+            motion:layout_constraintHorizontal_bias="0.9" />
+        <!-- SCENES -->
+        <Constraint
+            android:id="@+id/add_cab_screen1"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen2"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen3"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen4"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/add_cab_set4">
+
+        <Constraint
+            android:id="@+id/add_cab_phase1"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintHorizontal_chainStyle="spread"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/add_cab_sub_background"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase2"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase2"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase1"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase3"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase3"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase2"
+            motion:layout_constraintEnd_toStartOf="@+id/add_cab_phase4"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_phase4"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.15"
+            motion:layout_constraintEnd_toEndOf="@+id/add_cab_sub_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/add_cab_phase3"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.2"
+            motion:layout_constraintDimensionRatio="1,1" />
+        <Constraint
+            android:id="@+id/add_cab_car"
+            android:elevation="5dp"
+            motion:layout_constraintWidth_percent="0.25"
+            motion:layout_constraintEnd_toEndOf="@+id/add_cab_phase4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintVertical_bias="0.7"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_phase4"
+            motion:layout_constraintStart_toStartOf="@id/add_cab_phase4"
+            motion:layout_constraintDimensionRatio="W,2:5" />
+        <Constraint
+            android:id="@+id/add_cab_next"
+            motion:layout_constraintWidth_percent="0.5"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.975"
+            motion:layout_constraintHeight_percent="0.075"
+            motion:layout_constraintHorizontal_bias="0.9" />
+        <!-- SCENES -->
+        <Constraint
+            android:id="@+id/add_cab_screen1"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen2"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen3"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+        <Constraint
+            android:id="@+id/add_cab_screen4"
+            motion:layout_constraintTop_toBottomOf="@id/add_cab_sub_background"
+            motion:layout_constraintHeight_percent="0.575"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintWidth_percent="0.99"/>
+    </ConstraintSet>
+</MotionScene>
